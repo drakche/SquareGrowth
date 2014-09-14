@@ -1,0 +1,46 @@
+
+<ScatterTextWidget>:
+    orientation: 'vertical'
+    TextInput:
+        id: my_textinput
+        font_size: 100
+        size_hint_y: None
+        height: 110
+        text: 'default'
+        on_text:  root.change_label_color()
+    FloatLayout:
+        Scatter:
+            id: scatter
+            do_rotation: False
+            do_translation: True
+            do_scaling: False
+            pos: root.scatter_pos
+            size_hint: None, None
+            size: root.scatter_size_x, root.scatter_size_y
+            canvas.after:
+                Color:
+                    rgba: 0, 1, 0, 0.5
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            Button:
+                id: button
+                size_hint: None, None
+                size: root.scatter_size_x, root.scatter_size_y
+                on_press: root.toggle_growth()
+
+
+    BoxLayout:
+        orientation: 'horizontal'
+        height:100
+        size_hint_y: None
+        Label:
+            id: label1
+            text: my_textinput.text[:3][::-1]
+            font_size: 50
+            color: root.text_color
+        Label:
+            id: label2
+            text: my_textinput.text[-3:][::-1]
+            font_size: 50
+            color: root.text_color

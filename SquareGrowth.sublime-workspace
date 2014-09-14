@@ -3,6 +3,26 @@
 	{
 		"selected_items":
 		[
+			[
+				"gra",
+				"graphics  (module)"
+			],
+			[
+				"Scatte",
+				"ScatterTextWidget"
+			],
+			[
+				"ad",
+				"add_widget  (function)"
+			],
+			[
+				"la",
+				"Label"
+			],
+			[
+				"L",
+				"Label  (class)"
+			]
 		]
 	},
 	"buffers":
@@ -11,16 +31,16 @@
 			"file": "SquareGrowth.py",
 			"settings":
 			{
-				"buffer_size": 243,
+				"buffer_size": 1447,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/Dragan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+			"file": "tutorial.kv",
 			"settings":
 			{
-				"buffer_size": 813,
-				"line_ending": "Unix"
+				"buffer_size": 1273,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -31,35 +51,47 @@
 		"selected_items":
 		[
 			[
-				"ins",
-				"Package Control: Install Package"
+				"ss",
+				"Set Syntax: JSON"
 			],
 			[
-				"Package Control: remo",
-				"Package Control: Remove Package"
+				"ssp",
+				"Set Syntax: Python"
+			],
+			[
+				"ssx",
+				"Set Syntax: XML"
+			],
+			[
+				"ssj",
+				"Set Syntax: JSON"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
 			],
 			[
-				"Package Control: in",
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
 				"Package Control: Install Package"
 			],
 			[
-				"ssp",
-				"Set Syntax: Python"
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 496.0
 	},
 	"console":
 	{
-		"height": 146.0,
-		"history":
-		[
-			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
-		]
+		"height": 125.0
 	},
 	"distraction_free":
 	{
@@ -70,20 +102,22 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/C/Users/Dragan/Documents/GitHub/SquareGrowth"
-	],
 	"file_history":
 	[
-		"/C/Users/Dragan/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Dragan/AppData/Roaming/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/Dragan/AppData/Roaming/Sublime Text 2/Packages/User/Python.sublime-settings",
+		"/C/Users/Dragan/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
 		"/C/Users/Dragan/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Dragan/AppData/Roaming/Sublime Text 2/Packages/SublimePythonTidy/Default (Windows).sublime-keymap",
+		"/C/Users/Dragan/Documents/GitHub/SquareGrowth/SquareGrowth.py",
+		"/C/Users/Dragan/AppData/Roaming/Sublime Text 2/Packages/Pylinter/Pylinter.sublime-settings",
+		"/C/Users/Dragan/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Dragan/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/Dragan/Documents/GitHub/SquareGrowth/SquareGrowth"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -97,6 +131,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"scatter_size_x",
+			"self",
+			"label",
 			"auto",
 			"indent"
 		],
@@ -116,28 +153,33 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
 					"file": "SquareGrowth.py",
-					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 243,
+						"buffer_size": 1447,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								130,
-								130
+								1447,
+								1447
 							]
 						],
 						"settings":
 						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
 							"codeintel": true,
 							"codeintel_config":
 							{
@@ -241,35 +283,124 @@
 								"Python Django": "Python"
 							},
 							"codeintel_tooltips": "popup",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
 							"sublime_auto_complete": true,
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/C/Users/Dragan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-					"semi_transient": false,
+					"file": "tutorial.kv",
 					"settings":
 					{
-						"buffer_size": 813,
+						"buffer_size": 1273,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								607,
-								607
+								260,
+								260
 							]
 						],
 						"settings":
 						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
 							"codeintel": true,
 							"codeintel_config":
 							{
@@ -373,14 +504,98 @@
 								"Python Django": "Python"
 							},
 							"codeintel_tooltips": "popup",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
 							"sublime_auto_complete": true,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 371.0,
+						"translation.y": 166.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -388,7 +603,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 0.0
 	},
 	"input":
 	{
@@ -417,14 +632,9 @@
 		]
 	},
 	"menu_visible": true,
-	"output.find_results":
-	{
-		"height": 0.0
-	},
-	"project": "SquareGrowth.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 0.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -443,25 +653,10 @@
 		],
 		"width": 0.0
 	},
-	"select_symbol":
-	{
-		"height": 0.0,
-		"selected_items":
-		[
-		],
-		"width": 0.0
-	},
-	"selected_group": 0,
-	"settings":
-	{
-	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 150.0,
-	"status_bar_visible": true,
-	"template_settings":
-	{
-	}
+	"status_bar_visible": true
 }
