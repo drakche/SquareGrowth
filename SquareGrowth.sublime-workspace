@@ -31,15 +31,15 @@
 			"file": "SquareGrowth.py",
 			"settings":
 			{
-				"buffer_size": 1447,
+				"buffer_size": 736,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "tutorial.kv",
+			"file": "growth.kv",
 			"settings":
 			{
-				"buffer_size": 1273,
+				"buffer_size": 1870,
 				"line_ending": "Windows"
 			}
 		}
@@ -104,6 +104,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Dragan/Documents/GitHub/SquareGrowth/tutorial.kv",
+		"/C/Users/Dragan/Documents/GitHub/SquareGrowth/scatter.kv",
 		"/C/Users/Dragan/AppData/Roaming/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
 		"/C/Users/Dragan/AppData/Roaming/Sublime Text 2/Packages/User/Python.sublime-settings",
 		"/C/Users/Dragan/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
@@ -131,6 +133,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"class Square(Widget):\n    pass\n",
+			":",
 			"scatter_size_x",
 			"self",
 			"label",
@@ -161,15 +165,15 @@
 					"file": "SquareGrowth.py",
 					"settings":
 					{
-						"buffer_size": 1447,
+						"buffer_size": 736,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1103,
-								1103
+								360,
+								360
 							]
 						],
 						"settings":
@@ -372,25 +376,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 420.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "tutorial.kv",
+					"file": "growth.kv",
 					"settings":
 					{
-						"buffer_size": 1273,
+						"buffer_size": 1870,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								690,
-								58
+								202,
+								202
 							]
 						],
 						"settings":
@@ -588,9 +592,7 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
