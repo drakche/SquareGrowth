@@ -1,8 +1,11 @@
 
 <MainScreenScatter>:
+    scatter: scatter
     Scatter:
-        pos: root.getRandPos()
-        size: square1.size
+        id: scatter
+        square: square
+        pos: root.getrandomposition()
+        size: square.size
         size_hint: None, None
         do_rotation: False
         do_scale: False
@@ -14,11 +17,13 @@
                 pos: self.pos
                 size: self.size
         Square:
-            id: square1
+            id: square
             size: 5,5
     Scatter:
-        pos: root.getRandPos()
-        size: square2.size
+        id: scatter
+        square: square
+        pos: root.getrandomposition()
+        size: square.size
         size_hint: None, None
         do_rotation: False
         do_scale: False
@@ -30,37 +35,25 @@
                 pos: self.pos
                 size: self.size
         Square:
-            id: square2
+            id: square
             size: 5,5
     Scatter:
-        pos: root.getRandPos()
-        size: square3.size
+        id: scatter
+        square: square
+        pos: root.getrandomposition()
+        size: square.size
         size_hint: None, None
         do_rotation: False
         do_scale: False
         do_translation: True
         Square:
-            id: square3
+            id: square
             size: 5,5
     Scatter:
-        pos: root.getRandPos()
-        size: square4.size
-        size_hint: None, None
-        do_rotation: False
-        do_scale: False
-        do_translation: True
-        canvas.after:
-            Color:
-                rgba: 1, 0, 0, 0.5
-            Rectangle:
-                pos: self.pos
-                size: self.size
-        Square:
-            id: square4
-            size: 5,5
-    Scatter:
-        pos: root.getRandPos()
-        size: square5.size
+        id: scatter
+        square: square
+        pos: root.getrandomposition()
+        size: square.size
         size_hint: None, None
         do_rotation: False
         do_scale: False
@@ -72,11 +65,13 @@
                 pos: self.pos
                 size: self.size
         Square:
-            id: square5
+            id: square
             size: 5,5
     Scatter:
-        pos: root.getRandPos()
-        size: square6.size
+        id: scatter
+        square: square
+        pos: root.getrandomposition()
+        size: square.size
         size_hint: None, None
         do_rotation: False
         do_scale: False
@@ -88,11 +83,13 @@
                 pos: self.pos
                 size: self.size
         Square:
-            id: square6
+            id: square
             size: 5,5
     Scatter:
-        pos: root.getRandPos()
-        size: square7.size
+        id: scatter
+        square: square
+        pos: root.getrandomposition()
+        size: square.size
         size_hint: None, None
         do_rotation: False
         do_scale: False
@@ -104,7 +101,25 @@
                 pos: self.pos
                 size: self.size
         Square:
-            id: square7
+            id: square
+            size: 5,5
+    Scatter:
+        id: scatter
+        square: square
+        pos: root.getrandomposition()
+        size: square.size
+        size_hint: None, None
+        do_rotation: False
+        do_scale: False
+        do_translation: True
+        canvas.after:
+            Color:
+                rgba: 1, 0, 0, 0.5
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        Square:
+            id: square
             size: 5,5
 
 
