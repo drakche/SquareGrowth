@@ -1,18 +1,15 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+import random
+import logging
+
 from kivy.app import App
 from kivy.uix.widget import Widget
-from kivy.uix.button import Button
-from kivy.uix.scatter import Scatter
-from kivy.uix.label import Label
 from kivy.uix.floatlayout import FloatLayout
 from kivy.core.window import Window
 from kivy.properties import ListProperty, ObjectProperty
 from kivy.clock import Clock
-from kivy.animation import Animation
-import random
-import logging
 
 
 class Square(Widget):
@@ -33,15 +30,16 @@ class Square(Widget):
         # if (self.y + self.height) > Window.height:
         # self.y -= self.growth
         # if self.x - self.width <0:
-        #     self.x += self.growth
+        # self.x += self.growth
         # if self.y - self.height <0:
-        #     self.y += self.growth
+        # self.y += self.growth
 
     def on_touch_move(self, touch):
         self.moved = True
 
+
     def on_touch_up(self, touch):
-        if self.collide_point(*touch.pos): #this checks if we clicked on a child or on the parent
+        if self.collide_point(*touch.pos):  # this checks if we clicked on a child or on the parent
             if not self.moved:
                 if self.growth != 0:
                     self.growth = 0
@@ -66,17 +64,20 @@ class MainScreenScatter(FloatLayout):
     def update(self, dt):
         for child in self.children:
             child.children[0].grow()
-            # logging.info(str(self.scatter.right))
-            # logging.info(str(self.width))
-            if child.y + child.height < 0:
+
+            if child.y < 0:
                 child.y += child.children[0].growth
-            if child.top + child.height > child.height:
+            if child.top > self.height:
                 child.y -= child.children[0].growth
-            if child.x + child.width < 0:
+            if child.x < 0:
                 child.x += child.children[0].growth
-            if child.right > child.width:
-                logging.info('end hit')
+            if child.right > self.width:
                 child.x -= child.children[0].growth
+
+            for other_child in self.children:
+                if child != other_child:
+                    if child.collide_widget(other_child):
+                        print('collided')
 
 
 class GrowthApp(App):
