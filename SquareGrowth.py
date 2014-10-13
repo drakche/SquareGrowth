@@ -61,6 +61,11 @@ class MainScreenScatter(FloatLayout):
         return [random.random() * Window.width, random.random()
                 * Window.height]
 
+    @staticmethod
+    def stop_all_children(parent):
+        for child in parent.children:
+            child.children[0].growth = 0
+
     def update(self, dt):
         for child in self.children:
             child.children[0].grow()
@@ -77,7 +82,7 @@ class MainScreenScatter(FloatLayout):
             for other_child in self.children:
                 if child != other_child:
                     if child.collide_widget(other_child):
-                        print('collided')
+                        self.stop_all_children(self)
 
 
 class GrowthApp(App):
