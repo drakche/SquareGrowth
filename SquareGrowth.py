@@ -21,9 +21,9 @@ class Square(Widget):
         super(Square, self).__init__(**kwargs)
 
     def grow(self):
-        self.width += self.growth / 2
+        self.parent.width += self.growth / 2
         self.parent.x -= self.growth / 4
-        self.height += self.growth / 2
+        self.parent.height += self.growth / 2
         self.parent.y -= self.growth / 4
 
         # if (self.x + self.width) > Window.width:
