@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import random
-import logging
-
 from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.uix.floatlayout import FloatLayout
@@ -13,7 +11,7 @@ from kivy.clock import Clock
 
 
 class Square(Widget):
-    growth = 0.17
+    growth = 1
     velocity = ListProperty([10, 15])
     moved = False
 
@@ -21,10 +19,10 @@ class Square(Widget):
         super(Square, self).__init__(**kwargs)
 
     def grow(self):
-        self.parent.width += self.growth / 2
-        self.parent.x -= self.growth / 4
-        self.parent.height += self.growth / 2
-        self.parent.y -= self.growth / 4
+        self.parent.width += self.growth
+        self.parent.x -= self.growth / 2
+        self.parent.height += self.growth
+        self.parent.y -= self.growth / 2
 
         # if (self.x + self.width) > Window.width:
         # self.x -= self.growth
@@ -45,7 +43,7 @@ class Square(Widget):
                 if self.growth != 0:
                     self.growth = 0
                 else:
-                    self.growth = 0.17
+                    self.growth = 1
             else:
                 self.moved = False
             return True
